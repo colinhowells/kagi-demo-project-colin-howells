@@ -40,15 +40,20 @@ main {
 					flex: 0;
 					width: 2rem;
 				}
+				&:focus {
+					border-color: lightcoral;
+					outline: none;
+				}
 			}
 		}
 	}
 	button {
 		background: lightpink;
-		border: 1px solid red;
+		border: 1px solid lightcoral;
 		border-radius: 0.25rem;
 		padding: 0.5rem;
 		font-size: larger;
 		font-weight: bold;
+		cursor: pointer;
 	}
 }
