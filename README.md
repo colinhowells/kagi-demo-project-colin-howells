@@ -4,6 +4,8 @@
 
 ![Recipe Widget](img/html-recipes.jpg)
 
+_Note: task brief has been reworded for clarity_
+
 A recipe widget has:
 
 - a recipe title
