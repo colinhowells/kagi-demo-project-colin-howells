@@ -1,0 +1,54 @@
+main {
+	padding: 2rem 5dvw;
+}
+
+#court {
+	margin: 0 auto;
+	width: 500px;
+	max-width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 2rem;
+	padding: 1.5rem;
+	border: 1px solid #ccc;
+	border-radius: 0.5rem;
+	h2 {
+		font-size: 1.5rem;
+		font-weight: bold;
+		margin: 0;
+	}
+	/* fieldsets and legends are a real PIA to reset, and force their own initial heights */
+	.fieldset {
+		border: 0;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		.input-group {
+			display: flex;
+			flex-flow: row nowrap;
+			gap: 0.5rem;
+			align-items: center;
+			input {
+				display: flex;
+				padding: 0.5rem;
+				border: 1px solid #ccc;
+				border-radius: 0.25rem;
+				flex: 1;
+				&[type='number'] {
+					flex: 0;
+					width: 2rem;
+				}
+			}
+		}
+	}
+	button {
+		background: lightpink;
+		border: 1px solid red;
+		border-radius: 0.25rem;
+		padding: 0.5rem;
+		font-size: larger;
+		font-weight: bold;
+	}
+}

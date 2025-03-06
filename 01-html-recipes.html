@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task 1 - HTML Recipes</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/01-html-recipes.css" />
+		<link rel="author" href="https://colinhowells.com" />
+	</head>
+	<body>
+		<header>
+			<h1>Task 1 - HTML Recipes</h1>
+			<p><a href="02-js-optimization.html">Task 2 - JavaScript optimization</a></p>
+		</header>
+		<main role="main">
+			<section class="recipe" id="recipe-1" itemscope itemtype="https://schema.org/Recipe">
+				<h2 itemprop="name">Meat Lasagna Recipe</h2>
+				<ul id="recipe-1-ingredients" aria-label="Ingredients">
+					<li>
+						<input type="checkbox" name="recipe-1-ingredient-1" id="recipe-1-ingredient-1" /><label
+							itemprop="recipeIngredient"
+							for="recipe-1-ingredient-1"
+							>1 pound sweet Italian sausage</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-1-ingredient-2" id="recipe-1-ingredient-2" /><label
+							itemprop="recipeIngredient"
+							for="recipe-1-ingredient-2"
+							>3/4 pound lean ground beef</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-1-ingredient-3" id="recipe-1-ingredient-3" /><label
+							itemprop="recipeIngredient"
+							for="recipe-1-ingredient-3"
+							>1/2 cup minced onion</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-1-ingredient-4" id="recipe-1-ingredient-4" /><label
+							itemprop="recipeIngredient"
+							for="recipe-1-ingredient-4"
+							>2 cloves garlic, crushed</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-1-ingredient-5" id="recipe-1-ingredient-5" /><label
+							itemprop="recipeIngredient"
+							for="recipe-1-ingredient-5"
+							>1 (28 ounce) can crushed tomatoes</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-1-ingredient-6" id="recipe-1-ingredient-6" /><label
+							itemprop="recipeIngredient"
+							for="recipe-1-ingredient-6"
+							>2 (6 ounce) cans tomato paste</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-1-ingredient-7" id="recipe-1-ingredient-7" /><label
+							itemprop="recipeIngredient"
+							for="recipe-1-ingredient-7"
+							>2 (6.5 ounce) cans canned tomato sauce</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-1-ingredient-8" id="recipe-1-ingredient-8" /><label
+							itemprop="recipeIngredient"
+							for="recipe-1-ingredient-8"
+							>1/2 cup water</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-1-ingredient-9" id="recipe-1-ingredient-9" /><label
+							itemprop="recipeIngredient"
+							for="recipe-1-ingredient-9"
+							>2 tablespoons white sugar</label
+						>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-1-ingredient-10"
+							id="recipe-1-ingredient-10"
+						/><label itemprop="recipeIngredient" for="recipe-1-ingredient-10"
+							>1 1/2 teaspoons dried basil leaves</label
+						>
+					</li>
+					<!-- <li>
+                        <input type="checkbox" name="recipe-1-ingredient-11" id="recipe-1-ingredient-11" /><label
+                            itemprop="recipeIngredient"
+                            for="recipe-1-ingredient-11"
+                            >1/2 teaspoon fennel seeds</label
+                        >
+                    </li>
+                    <li>
+                        <input type="checkbox" name="recipe-1-ingredient-12" id="recipe-1-ingredient-12" /><label
+                            itemprop="recipeIngredient"
+                            for="recipe-1-ingredient-12"
+                            >1 teaspoon Italian seasoning</label
+                        >
+                    </li>
+                    <li>
+                        <input type="checkbox" name="recipe-1-ingredient-13" id="recipe-1-ingredient-13" /><label
+                            itemprop="recipeIngredient"
+                            for="recipe-1-ingredient-13"
+                            >1 1/2 teaspoons salt, divided, or to taste</label
+                        >
+                    </li>
+                    <li>
+                        <input type="checkbox" name="recipe-1-ingredient-14" id="recipe-1-ingredient-14" /><label
+                            itemprop="recipeIngredient"
+                            for="recipe-1-ingredient-14"
+                            >1/4 teaspoon ground black pepper</label
+                        >
+                    </li>
+                    <li>
+                        <input type="checkbox" name="recipe-1-ingredient-15" id="recipe-1-ingredient-15" /><label
+                            itemprop="recipeIngredient"
+                            for="recipe-1-ingredient-15"
+                            >4 tablespoons chopped fresh parsley</label
+                        >
+                    </li>
+                    <li>
+                        <input type="checkbox" name="recipe-1-ingredient-16" id="recipe-1-ingredient-16" /><label
+                            itemprop="recipeIngredient"
+                            for="recipe-1-ingredient-16"
+                            >12 lasagna noodles</label
+                        >
+                    </li>
+                    <li>
+                        <input type="checkbox" name="recipe-1-ingredient-17" id="recipe-1-ingredient-17" /><label
+                            itemprop="recipeIngredient"
+                            for="recipe-1-ingredient-17"
+                            >16 ounces ricotta cheese</label
+                        >
+                    </li>
+                    <li>
+                        <input type="checkbox" name="recipe-1-ingredient-18" id="recipe-1-ingredient-18" /><label
+                            itemprop="recipeIngredient"
+                            for="recipe-1-ingredient-18"
+                            >1 egg</label
+                        >
+                    </li>
+                    <li>
+                        <input type="checkbox" name="recipe-1-ingredient-19" id="recipe-1-ingredient-19" /><label
+                            itemprop="recipeIngredient"
+                            for="recipe-1-ingredient-19"
+                            >3/4 pound mozzarella cheese, sliced</label
+                        >
+                    </li>
+                    <li>
+                        <input type="checkbox" name="recipe-1-ingredient-20" id="recipe-1-ingredient-20" /><label
+                            itemprop="recipeIngredient"
+                            for="recipe-1-ingredient-20"
+                            >3/4 cup grated Parmesan cheese</label
+                        >
+                    </li>
+                    <li>
+                        <input type="checkbox" name="recipe-1-ingredient-21" id="recipe-1-ingredient-21" /><label
+                            itemprop="recipeIngredient"
+                            for="recipe-1-ingredient-21"
+                            >2 cloves garlic, crushed</label
+                        >
+                    </li> -->
+				</ul>
+				<!-- @TODO this really needs to be keyboard-accessible, but for that we'd need JS -->
+				<label class="toggle" for="recipe-1-toggle">
+					<span class="more">Show More</span>
+					<span class="less">Show Less</span>
+					<input type="checkbox" hidden name="recipe-1-toggle" id="recipe-1-toggle" />
+				</label>
+			</section>
+
+			<section class="recipe" id="recipe-2" itemscope itemtype="https://schema.org/Recipe">
+				<h2 itemprop="name">Meat Lasagna Recipe</h2>
+				<ul id="recipe-2-ingredients" aria-label="Ingredients">
+					<li>
+						<input type="checkbox" name="recipe-2-ingredient-1" id="recipe-2-ingredient-1" /><label
+							itemprop="recipeIngredient"
+							for="recipe-2-ingredient-1"
+							>1 pound sweet Italian sausage</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-2-ingredient-2" id="recipe-2-ingredient-2" /><label
+							itemprop="recipeIngredient"
+							for="recipe-2-ingredient-2"
+							>3/4 pound lean ground beef</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-2-ingredient-3" id="recipe-2-ingredient-3" /><label
+							itemprop="recipeIngredient"
+							for="recipe-2-ingredient-3"
+							>1/2 cup minced onion</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-2-ingredient-4" id="recipe-2-ingredient-4" /><label
+							itemprop="recipeIngredient"
+							for="recipe-2-ingredient-4"
+							>2 cloves garlic, crushed</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-2-ingredient-5" id="recipe-2-ingredient-5" /><label
+							itemprop="recipeIngredient"
+							for="recipe-2-ingredient-5"
+							>1 (28 ounce) can crushed tomatoes</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-2-ingredient-6" id="recipe-2-ingredient-6" /><label
+							itemprop="recipeIngredient"
+							for="recipe-2-ingredient-6"
+							>2 (6 ounce) cans tomato paste</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-2-ingredient-7" id="recipe-2-ingredient-7" /><label
+							itemprop="recipeIngredient"
+							for="recipe-2-ingredient-7"
+							>2 (6.5 ounce) cans canned tomato sauce</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-2-ingredient-8" id="recipe-2-ingredient-8" /><label
+							itemprop="recipeIngredient"
+							for="recipe-2-ingredient-8"
+							>1/2 cup water</label
+						>
+					</li>
+					<li>
+						<input type="checkbox" name="recipe-2-ingredient-9" id="recipe-2-ingredient-9" /><label
+							itemprop="recipeIngredient"
+							for="recipe-2-ingredient-9"
+							>2 tablespoons white sugar</label
+						>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-2-ingredient-10"
+							id="recipe-2-ingredient-10"
+						/><label itemprop="recipeIngredient" for="recipe-2-ingredient-10"
+							>1 1/2 teaspoons dried basil leaves</label
+						>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-2-ingredient-11"
+							id="recipe-2-ingredient-11"
+						/><label itemprop="recipeIngredient" for="recipe-2-ingredient-11"
+							>1/2 teaspoon fennel seeds</label
+						>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-2-ingredient-12"
+							id="recipe-2-ingredient-12"
+						/><label itemprop="recipeIngredient" for="recipe-2-ingredient-12"
+							>1 teaspoon Italian seasoning</label
+						>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-2-ingredient-13"
+							id="recipe-2-ingredient-13"
+						/><label itemprop="recipeIngredient" for="recipe-2-ingredient-13"
+							>1 1/2 teaspoons salt, divided, or to taste</label
+						>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-2-ingredient-14"
+							id="recipe-2-ingredient-14"
+						/><label itemprop="recipeIngredient" for="recipe-2-ingredient-14"
+							>1/4 teaspoon ground black pepper</label
+						>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-2-ingredient-15"
+							id="recipe-2-ingredient-15"
+						/><label itemprop="recipeIngredient" for="recipe-2-ingredient-15"
+							>4 tablespoons chopped fresh parsley</label
+						>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-2-ingredient-16"
+							id="recipe-2-ingredient-16"
+						/><label itemprop="recipeIngredient" for="recipe-2-ingredient-16"
+							>12 lasagna noodles</label
+						>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-2-ingredient-17"
+							id="recipe-2-ingredient-17"
+						/><label itemprop="recipeIngredient" for="recipe-2-ingredient-17"
+							>16 ounces ricotta cheese</label
+						>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-2-ingredient-18"
+							id="recipe-2-ingredient-18"
+						/><label itemprop="recipeIngredient" for="recipe-2-ingredient-18">1 egg</label>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-2-ingredient-19"
+							id="recipe-2-ingredient-19"
+						/><label itemprop="recipeIngredient" for="recipe-2-ingredient-19"
+							>3/4 pound mozzarella cheese, sliced</label
+						>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-2-ingredient-20"
+							id="recipe-2-ingredient-20"
+						/><label itemprop="recipeIngredient" for="recipe-2-ingredient-20"
+							>3/4 cup grated Parmesan cheese</label
+						>
+					</li>
+					<li>
+						<input
+							type="checkbox"
+							name="recipe-2-ingredient-21"
+							id="recipe-2-ingredient-21"
+						/><label itemprop="recipeIngredient" for="recipe-2-ingredient-21"
+							>2 cloves garlic, crushed</label
+						>
+					</li>
+				</ul>
+				<!-- @TODO this really needs to be keyboard-accessible, but for that we'd need JS -->
+				<label class="toggle" for="recipe-2-toggle">
+					<span class="more">Show More</span>
+					<span class="less">Show Less</span>
+					<input type="checkbox" hidden name="recipe-2-toggle" id="recipe-2-toggle" />
+				</label>
+			</section>
+		</main>
+	</body>
+</html>

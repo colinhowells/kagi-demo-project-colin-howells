@@ -1,0 +1,90 @@
+main {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 30ch), 1fr));
+	align-content: space-around;
+	justify-content: flex-start;
+	gap: 2rem 5dvw;
+	padding: 2rem 5dvw;
+	/* let's not allow the uncollapsed section to match the height of an expanded one  */
+	& > * {
+		height: fit-content;
+	}
+}
+
+.recipe {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1rem;
+	padding: 1.5rem;
+	border: 1px solid #ccc;
+	border-radius: 0.5rem;
+	h2 {
+		margin: 0;
+		font-weight: normal;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		margin: 0.75rem 0;
+		display: flex;
+		flex-flow: row nowrap;
+		gap: 0.5rem;
+		label,
+		input {
+			cursor: pointer;
+		}
+	}
+	.toggle {
+		display: none;
+		cursor: pointer;
+		margin: 0 auto;
+		font-size: smaller;
+	}
+	/* it would be nice to have a var like `--max-items: 11`, but nth-child can't accept it … */
+	/* with a preprocessor (sass, etc), or of course JS, it'd be doable */
+	&:has(li:nth-child(n + 11)) {
+		li:nth-child(n + 11) {
+			opacity: 0;
+			display: none;
+			/* COLLAPSING transition */
+			/* shorthand – transition: opacity 0.1s ease-out, display 0.1s ease-out allow-discrete; */
+			/* these fancy transitions will be ignored by browsers that can't handle them */
+			transition-property: display opacity;
+			transition-behavior: allow-discrete;
+			transition-duration: 0.1s;
+			transition-timing-function: ease-out;
+		}
+		.toggle {
+			display: block;
+		}
+		.more {
+			display: block;
+		}
+		.less {
+			display: none;
+		}
+	}
+	&:has(.toggle input:checked) {
+		.more {
+			display: none;
+		}
+		.less {
+			display: block;
+		}
+		li:nth-child(n + 11) {
+			opacity: 1;
+			display: flex;
+			/* OPENING transition */
+			/* shorthand – transition: opacity 0.5s ease-in, display 0.5s ease-in allow-discrete; */
+			transition-duration: 0.5s;
+			transition-timing-function: ease-in;
+			/* initial */
+			@starting-style {
+				opacity: 0;
+			}
+		}
+	}
+}

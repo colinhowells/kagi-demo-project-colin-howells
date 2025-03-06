@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task 2 - JavaScript optimization</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/02-js-optimization.css" />
+		<link rel="author" href="https://colinhowells.com" />
+	</head>
+	<body>
+		<header>
+			<h1>Task 2 - JavaScript optimization</h1>
+			<p><a href="01-html-recipes.html">Task 1 - HTML Recipes</a></p>
+		</header>
+		<main role="main">
+			<form name="court" id="court">
+				<h2>Court appearance time calculator</h2>
+				<div class="fieldset">
+					<div class="input-group">
+						<label for="plaintiff">Plaintiff's name:</label>
+						<input type="text" id="plaintiff" name="plaintiff" title="Enter first name" required />
+					</div>
+					<div class="input-group">
+						<label for="number-judges">Number of judges:</label>
+						<input type="number" id="number-judges" name="numberJudges" min="1" required />
+					</div>
+					<div class="input-group">
+						<label for="other-plaintiffs">Other plaintiffs:</label>
+						<input
+							type="text"
+							id="other-plaintiffs"
+							name="otherPlaintiffs"
+							pattern="^[A-Za-z]+(\s[A-Za-z]+)*$"
+							title="Enter first names separated by spaces"
+							required
+						/>
+					</div>
+				</div>
+				<button type="submit">Submit</button>
+				<p id="court-result"></p>
+			</form>
+		</main>
+		<script src="js/02-js-optimization.js"></script>
+	</body>
+</html>
