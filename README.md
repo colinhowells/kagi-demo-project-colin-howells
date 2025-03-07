@@ -83,6 +83,8 @@ function court(defendant, numberJudges, otherDefendants) {
 
 Belatedly realizing this was an algorithm problem, I needed to think in terms of batch processing, and while I was worried I was adding execution time by using loops, this final version, simpler, accurate, and takes roughly the same time.
 
+[Link to function](js/02-js-optimization.js)
+
 ```js
 // Typical execution time: 0.10000002384185791 ms
 
