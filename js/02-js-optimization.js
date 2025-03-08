@@ -23,21 +23,15 @@ const HEARING_MINUTES = 30;
  * court('Mickey', 2, 'Bobby Phil Jerry Billy');
  */
 function court(defendant, numberJudges, otherDefendants) {
-	const defendantsAlphabetized = [defendant, ...otherDefendants.split(' ')].sort();
+	// Convert to array and find defendant's place in line
+	const defendantIndex = [...otherDefendants.split(' '), defendant].sort().indexOf(defendant);
 
-	let batches = [];
-	let batchNumber = 1;
-	// splitting our array of defendants into batches of numberJudges' size
-	while (defendantsAlphabetized.length) {
-		// splice is destructive, but we don't need the original array
-		const batch = defendantsAlphabetized.splice(0, numberJudges);
-		// we now know which batch our defendant is in, so let's bail
-		if (batch.includes(defendant)) return batchNumber * HEARING_MINUTES;
-		batches.push(batch);
-		batchNumber++;
-	}
+	// defendant's not here to be found
+	if (defendantIndex === -1) return null;
 
-	return null;
+	// get the batch number by dividing (1-based) place by judges, round if you have to, then multiply time
+	// ex. 4th/3 = 1.333 => batch 2; 5th/1 = 1 => batch 5
+	return Math.ceil((defendantIndex + 1) / numberJudges) * HEARING_MINUTES;
 }
 
 /**

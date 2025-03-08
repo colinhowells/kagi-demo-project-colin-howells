@@ -106,3 +106,26 @@ function court(defendant, numberJudges, otherDefendants) {
 	return null;
 }
 ```
+
+### Anthropic’s version
+
+I had to check to see how an AI would have dealt with this, and of course it's much simpler. I can't claim this as my own, so it's not in the codebase, but in a typical day at work, I'd be looking for efficiencies like this and would be glad to have used it (after testing!).
+
+In my defense, my benchmark time seems identical!
+
+```js
+// Typical execution time: 0.10000002384185791 ms
+
+function court(defendant, numberJudges, otherDefendants) {
+	// sort defendants, find defendant's place in line
+	const defendantIndex = [...otherDefendants.split(' '), defendant].sort().indexOf(defendant);
+
+	// defendant's not here to be found
+	if (defendantIndex === -1) return null;
+
+	// get the batch number by dividing (1-based) place by judges
+	// ex. 4th/3 = 1.333 => batch 2; 5th/1 = 1 => batch 5
+	// round if you have to, then multiply time
+	return Math.ceil((defendantIndex + 1) / numberJudges) * HEARING_MINUTES;
+}
+```
